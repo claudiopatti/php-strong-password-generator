@@ -42,13 +42,25 @@
     <body>
         
         <div>
+            <div>
+                <form method="GET">
+                    <div>
+                        <label for="lenghtPassword">Quanto deve essere lunga la tua password random? (minimo 4 caratteri cosìda avere una lettera minuscola, una lettera maiuscola, un numero e un carattere speciale)</label>
+                    </div>
+                    <input type="number" name="lenghtPassword" id="lenghtPassword" min="4">
+                    <div>
+                        <button type="submit">
+                            Calcola
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+
             <?php
-                echo randomPassword(4)
+                echo randomPassword($_GET['lenghtPassword'])
             ?>
         </div>
-        <h1>
-            ciao
-        </h1>
         
     </body>
 </html>
