@@ -14,7 +14,7 @@
         
         <div>
             <div>
-                <form method="GET">
+                <form action="generate-password.php" method="GET">
                     <div>
                         <label for="lenghtPassword">Quanto deve essere lunga la tua password random? (minimo 4 caratteri cosìda avere una lettera minuscola, una lettera maiuscola, un numero e un carattere speciale)</label>
                     </div>
